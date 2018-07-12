@@ -4,6 +4,23 @@
 
 generated GeoJSON are located in folder `geojson`. See `rawdata` how this is generated.
 
+## Usage
+
+    npm i --save germany-administrative-geojson
+
+### TypeScript
+
+```ts
+import { GermanyAdministrativeGeojson as AdminGeoJson } from "germany-administrative-geojson";
+
+// get GeoJSON of all States
+AdminGeoJson.getStates();
+
+// get attribution string
+AdminGeoJson.getAttribution();
+
+```
+
 ## Attribution required
 
 If you use the provided geojson you have to refer to the data source and their terms of use. Always add the attribution!
@@ -12,10 +29,12 @@ See `Source of Data`.
 
 ## Source of Data
 
-The used dataset to geneate geojson has the following terms of use:
+The dataset used to generate geojson has the following terms of use:
 
 > This dataset is available for download and online use via geodata services, according to the law on access to spatial data, for commercial and non-commercial usage exempted from payment.
+> 
 > Usage of the geodata and geodata services is regulated by the Verordnung zur Festlegung der Nutzungsbestimmungen für die Bereitstellung von Geodaten des Bundes (GeoNutzV) (Ordinance to determine the conditions for use for the provision of spatial data from the Federation) of 19 March 2013 (Bundesgesetzblatt Jahrgang 2013 Teil I Nr. 14) (Federal Law Gazette 2013, Part 1., No. 14).
+> 
 > In particular, every user must place the respective source note referring to all geodata, metadata and geodata services unambiguously and in optical relationship. Alterations, revisions, new designs or any other variations must be provided with an alteration notice in the source reference.
 
 © GeoBasis-DE / [BKG](http://www.bkg.bund.de) 2018 (data changed)

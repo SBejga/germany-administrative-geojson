@@ -16,6 +16,7 @@
   "keywords": [],
   "author": "Sebastian Bejga",
   "license": "Apache-2.0",
+  "repository": "github:SBejga/germany-administrative-geojson",
   "devDependencies": {
     "@types/jsonfile": "^4.0.1",
     "gts": "^0.7.1",
