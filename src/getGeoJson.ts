@@ -3,6 +3,10 @@ import * as path from 'path';
 
 export class GermanyAdministrativeGeojson {
 
+    static getAttribution() {
+        return "© GeoBasis-DE / [BKG](http://www.bkg.bund.de) 2018 (data changed)";
+    }
+
     static getStates(simplified = 20) {
         return this.fromFile("germany_states_simplify" + simplified + ".geojson");
     }
