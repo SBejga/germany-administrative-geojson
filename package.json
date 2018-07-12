@@ -1,8 +1,8 @@
 {
   "name": "germany-administrative-geojson",
   "version": "1.0.0",
-  "description": "provide administrative boundary of Germany as GeoJSON (country, states, government districts)",
-  "main": "index.js",
+  "description": "provide administrative boundary of Germany as GeoJSON (states)",
+  "main": "build/src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "check": "gts check",
@@ -17,7 +17,11 @@
   "author": "Sebastian Bejga",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@types/jsonfile": "^4.0.1",
     "gts": "^0.7.1",
     "typescript": "~2.8.0"
+  },
+  "dependencies": {
+    "jsonfile": "^4.0.0"
   }
 }
