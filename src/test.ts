@@ -1,9 +1,31 @@
 import * as AdminGeojson from './';
 
 describe('GeoJSON', () => {
+  const states = AdminGeojson.getStates();
   it('should get states', () => {
-    expect(AdminGeojson.getStates()).toBeTruthy();
+    expect(states).toBeTruthy();
   });
+  it('should have feature with admin properties', () => {
+    const aState = states.features[0];
+    expect(aState.properties).toHaveProperty('ADE');
+    expect(aState.properties).toHaveProperty('SN_L');
+    expect(aState.properties).toHaveProperty('GEN');
+  });
+  it('should have an example state: bavaria', () => {
+    const example = states.features.find(s => s.properties.GEN === 'Bayern');
+    expect(example).toBeDefined();
+    if (example) {
+      expect(example.properties).toHaveProperty('ADE', 2);
+      expect(example.properties).toHaveProperty('SN_L', '09');
+    }
+  });
+});
+
+describe('ID', () => {
+  const states = AdminGeojson.getStates();
+  for (const state of states.features) {
+    console.log('state ' + state.properties.GEN + ` "SN_L": ${state.properties.SN_L}`);
+  }
 });
 
 describe('Attribution', () => {

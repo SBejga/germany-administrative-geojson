@@ -7,7 +7,7 @@
     "test": "jest",
     "check": "gts check",
     "clean": "gts clean",
-    "prepublish": "npm run clean",
+    "prepublish": "npm run clean && npm run test",
     "compile": "tsc -p .",
     "fix": "gts fix",
     "prepare": "npm run compile",
@@ -19,6 +19,7 @@
   "license": "Apache-2.0",
   "repository": "github:SBejga/germany-administrative-geojson",
   "devDependencies": {
+    "@types/geojson": "^7946.0.4",
     "@types/jest": "^23.1.5",
     "@types/jsonfile": "^4.0.1",
     "gts": "^0.7.1",
@@ -27,6 +28,7 @@
     "typescript": "~2.8.0"
   },
   "dependencies": {
+    "@yaga/generic-geojson": "^1.0.0",
     "jsonfile": "^4.0.0"
   }
 }
