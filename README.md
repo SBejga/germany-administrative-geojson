@@ -44,3 +44,4 @@ The dataset used to generate geojson has the following terms of use:
 - GDAL, [gdal-docker](https://github.com/geo-data/gdal-docker)
 - [simple-geodata-selector](https://github.com/opendatalab-de/simple-geodata-selector)
 - [Geodatenzentrum](http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=1&gdz_unt_zeile=14&gdz_user_id=0)
+- [Generic GeoJSON](https://github.com/yagajs/generic-geojson)
