@@ -15,6 +15,12 @@ function validate(geojson: any) {
   return geojson as GenericGeoJSONFeatureCollection<GeometryObject, AdminProperties>;
 }
 
+function filter(geojson: GenericGeoJSONFeatureCollection<GeometryObject, AdminProperties>) {
+  // override geojson.features by filtered
+  geojson.features = geojson.features.filter(s => s.properties.GF === 4);
+  return geojson;
+}
+
 export function getStates(simplified = 20) {
-  return validate(fromFile('germany_states_simplify' + simplified + '.geojson'));
+  return filter(validate(fromFile('germany_states_simplify' + simplified + '.geojson')));
 }
