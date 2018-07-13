@@ -7,6 +7,7 @@
     "test": "jest",
     "check": "gts check",
     "clean": "gts clean",
+    "prepublish": "npm run clean",
     "compile": "tsc -p .",
     "fix": "gts fix",
     "prepare": "npm run compile",
