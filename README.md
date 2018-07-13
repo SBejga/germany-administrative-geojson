@@ -11,13 +11,13 @@ generated GeoJSON are located in folder `geojson`. See `rawdata` how this is gen
 ### TypeScript
 
 ```ts
-import { GermanyAdministrativeGeojson as AdminGeoJson } from "germany-administrative-geojson";
+import * as AdminGeojson from "germany-administrative-geojson";
 
 // get GeoJSON of all States
-AdminGeoJson.getStates();
+AdminGeojson.getStates();
 
 // get attribution string
-AdminGeoJson.getAttribution();
+AdminGeojson.getAttribution().text //or html, or markdown
 
 ```
 
