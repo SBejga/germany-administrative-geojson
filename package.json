@@ -23,6 +23,7 @@
     "@types/jsonfile": "^4.0.1",
     "gts": "^0.7.1",
     "jest": "^23.4.0",
+    "merge": "^1.2.1",
     "ts-jest": "^23.0.0",
     "typescript": "~2.8.0"
   },
