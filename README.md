@@ -22,6 +22,10 @@ AdminGeojson.getAttribution().text //or html, or markdown
 
 ## state ID Mapping
 
+to know which state is a geojson feature, you should check the feature.properties.SN_L
+
+see mapping:
+
 ```js
 [
     '01: Schleswig-Holstein',
