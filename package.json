@@ -1,6 +1,6 @@
 {
   "name": "germany-administrative-geojson",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "provide administrative boundary of Germany as GeoJSON (states)",
   "main": "build/index.js",
   "scripts": {
